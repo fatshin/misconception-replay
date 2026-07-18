@@ -13,9 +13,10 @@ replay that tests the corrected mental model.
 
 ## How it was built
 
-Codex implemented answer/reason separation, misconception labels, replay
-generation, a twenty-case evaluation, tests, and the public interface. GPT-5.6
-is intended to classify open-ended explanations and draft replays.
+I used Codex with GPT-5.6 to implement answer/reason separation, misconception
+labels, replay generation, a twenty-case evaluation, tests, and the public
+interface. A future live path can use GPT-5.6 to classify open-ended
+explanations and draft replays; the public demo uses a tested fixture.
 
 ## Proof
 
