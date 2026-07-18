@@ -24,6 +24,7 @@ is intended to classify open-ended explanations and draft replays.
 
 - Live product: https://misconception-replay.fatshin.chatgpt.site
 - Source: https://github.com/fatshin/misconception-replay
+- Devpost draft: https://devpost.com/software/misconception-replay
 - Video: `UPLOAD_TO_YOUTUBE_AND_REPLACE`
 
 ## Limits
