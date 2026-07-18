@@ -2,6 +2,9 @@
 
 **Tagline:** Find the misconception hidden behind a correct answer.
 
+**Category:** Education  
+**Codex Session ID:** `019f7306-7262-7371-a03f-6b99df7129bf`
+
 ## What it does
 
 The product scores a learner’s answer separately from the explanation, detects
