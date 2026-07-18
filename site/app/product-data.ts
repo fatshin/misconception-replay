@@ -1,5 +1,18 @@
 import type { Product } from "./product-types";
 
+const casesFixture = Array.from({ length: 20 }, (_, index) => {
+  const misconception = index % 4 === 0;
+  return {
+    id: `M${String(index + 1).padStart(2, "0")}`,
+    problem: "1/2 + 1/3",
+    answer: "5/6",
+    reasoning: misconception
+      ? "I added both numerators and both denominators, then changed it to 5/6."
+      : "The common denominator is 6, so 3/6 + 2/6 = 5/6.",
+    label: misconception ? "ADD_BOTH_PARTS" : "CORRECT",
+  };
+});
+
 export const product: Product = {
   number: "08",
   name: "Misconception Replay",
@@ -8,8 +21,8 @@ export const product: Product = {
   description: "Compare a learner’s answer and explanation, distinguish knowledge from lucky guessing, and generate a targeted replay that corrects the underlying mental model.",
   accent: "#ff9f1c",
   inputLabel: "Learner response set",
-  inputHint: "The same twenty labeled fraction cases are evaluated by product.py.",
-  inputValue: "Problem: 1/2 + 1/3\nAnswer: 5/6 (correct)\nReasoning in five cases: “I added both numerators and both denominators, then changed it to 5/6.”\nExpected label: ADD_BOTH_PARTS.",
+  inputHint: "These exact twenty labeled fraction cases are evaluated by product.py.",
+  inputValue: JSON.stringify(casesFixture, null, 2),
   actionLabel: "Reveal verified result",
   status: "EVAL_PASS",
   statusTone: "good",
